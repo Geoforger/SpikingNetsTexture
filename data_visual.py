@@ -2,9 +2,6 @@ import pickle
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Create array to contain the intensities of events
-intensity = np.zeros([240, 180])
-
 # Path to dataset
 # Change folder path for each dataset?
 FOLDER_NAME = "ntac_2.5_6texture_20trial_slide_test_06031504"
@@ -17,6 +14,9 @@ trials = 20
 # Maximum intensity of events seen across entire dataset
 # Used to scale the heatmaps
 max_intensity = 0
+
+# Create array to contain the intensities of events for mapping
+intensity = np.zeros([240, 180])
 
 # Open each file and find the highest intensity in order to find an appropriate vmax
 for t in range(trials):
@@ -40,6 +40,7 @@ for t in range(trials):
         if file_intensity > max_intensity:
             max_intensity = file_intensity
 
+# Create and save heatmap for each tap
 for xx in range(trials):
     for yy in range(textures):
         # Open each file individually
@@ -63,6 +64,8 @@ for xx in range(trials):
         plt.ylabel('Y Pixels')
         plt.xlabel('X Pixels')
         plt.colorbar()
+        plt.title("SingleTap_run_" +
+                  str(xx) + "_orientation_" + str(yy))
         plt.savefig("graphs/SingleTap_run_" +
                     str(xx) + "_orientation_" + str(yy) + ".pickle" + ".png")
         plt.clf()  # Clear figure post save
