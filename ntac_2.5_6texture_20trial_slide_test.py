@@ -15,6 +15,12 @@ import numpy as np
 # from vsp.video_stream import CvVideoCamera, CvVideoDisplay, CvVideoOutputFile
 # from vsp.processor import CameraStreamProcessorMT, AsyncProcessor
 
+######################################################################
+# TO DO LIST:
+# 1) Lower the first (0) test by 1mm to exert equal pressure []
+# 2) Find way to easily visualise data []
+######################################################################
+
 def make_meta(meta_file,
               robot_tcp=[0, 0, 75, 0, 0, 0],
               base_frame=[0, 0, 0, 0, 0, 0],
