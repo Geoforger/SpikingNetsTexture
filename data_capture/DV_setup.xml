@@ -1,8 +1,8 @@
 <dv version="2.0">
     <node name="mainloop" path="/mainloop/">
-        <attr key="_guiSupport" type="string">{"lastDeployedHash":"4a3ea67cc6126da5953147f879b26a3604857dd8"}</attr>
+        <attr key="_guiSupport" type="string">{"lastDeployedHash":"08421bd8bf814b5f7c54fa38d8d8fbf31cfd4c9a"}</attr>
         <node name="_visualizer_accumulator___frames_0" path="/mainloop/_visualizer_accumulator___frames_0/">
-            <attr key="_guiSupport" type="string">{"visualizerX":12,"visualizerY":0,"size":4,"minimized":false,"boxX":400.0,"boxY":550.0}</attr>
+            <attr key="_guiSupport" type="string">{"visualizerX":12,"visualizerY":0,"size":4,"minimized":false,"boxX":400.0,"boxY":500.0}</attr>
             <attr key="_priorityAttributes" type="string">compression,ipAddress,portNumber</attr>
             <attr key="compression" type="string">NONE</attr>
             <attr key="ipAddress" type="string">127.0.0.1</attr>
@@ -11,8 +11,8 @@
             <attr key="maxConnectionsBacklog" type="int">5</attr>
             <attr key="maxDataBacklog" type="int">5</attr>
             <attr key="moduleLibrary" type="string">dv_output_net_tcp_server</attr>
-            <attr key="portNumber" type="int">0</attr>
-            <attr key="running" type="bool">false</attr>
+            <attr key="portNumber" type="int">45963</attr>
+            <attr key="running" type="bool">true</attr>
             <attr key="timeout" type="long">0</attr>
             <node name="inputs" path="/mainloop/_visualizer_accumulator___frames_0/inputs/">
                 <node name="output0" path="/mainloop/_visualizer_accumulator___frames_0/inputs/output0/">
@@ -21,7 +21,7 @@
             </node>
         </node>
         <node name="_visualizer_capture___frames_0" path="/mainloop/_visualizer_capture___frames_0/">
-            <attr key="_guiSupport" type="string">{"visualizerX":12,"visualizerY":4,"size":4,"minimized":false,"boxX":400.0,"boxY":550.0}</attr>
+            <attr key="_guiSupport" type="string">{"visualizerX":12,"visualizerY":4,"size":4,"minimized":false,"boxX":400.0,"boxY":500.0}</attr>
             <attr key="_priorityAttributes" type="string">compression,ipAddress,portNumber</attr>
             <attr key="compression" type="string">NONE</attr>
             <attr key="ipAddress" type="string">127.0.0.1</attr>
@@ -30,8 +30,8 @@
             <attr key="maxConnectionsBacklog" type="int">5</attr>
             <attr key="maxDataBacklog" type="int">5</attr>
             <attr key="moduleLibrary" type="string">dv_output_net_tcp_server</attr>
-            <attr key="portNumber" type="int">0</attr>
-            <attr key="running" type="bool">false</attr>
+            <attr key="portNumber" type="int">33257</attr>
+            <attr key="running" type="bool">true</attr>
             <attr key="timeout" type="long">0</attr>
             <node name="inputs" path="/mainloop/_visualizer_capture___frames_0/inputs/">
                 <node name="output0" path="/mainloop/_visualizer_capture___frames_0/inputs/output0/">
@@ -40,7 +40,7 @@
             </node>
         </node>
         <node name="_visualizer_capture___imu_0" path="/mainloop/_visualizer_capture___imu_0/">
-            <attr key="_guiSupport" type="string">{"visualizerX":12,"visualizerY":8,"size":4,"minimized":true,"boxX":400.0,"boxY":550.0}</attr>
+            <attr key="_guiSupport" type="string">{"visualizerX":12,"visualizerY":8,"size":4,"minimized":false,"boxX":400.0,"boxY":500.0}</attr>
             <attr key="_priorityAttributes" type="string">compression,ipAddress,portNumber</attr>
             <attr key="compression" type="string">NONE</attr>
             <attr key="ipAddress" type="string">127.0.0.1</attr>
@@ -49,8 +49,8 @@
             <attr key="maxConnectionsBacklog" type="int">5</attr>
             <attr key="maxDataBacklog" type="int">5</attr>
             <attr key="moduleLibrary" type="string">dv_output_net_tcp_server</attr>
-            <attr key="portNumber" type="int">0</attr>
-            <attr key="running" type="bool">false</attr>
+            <attr key="portNumber" type="int">43719</attr>
+            <attr key="running" type="bool">true</attr>
             <attr key="timeout" type="long">0</attr>
             <node name="inputs" path="/mainloop/_visualizer_capture___imu_0/inputs/">
                 <node name="output0" path="/mainloop/_visualizer_capture___imu_0/inputs/output0/">
@@ -59,7 +59,7 @@
             </node>
         </node>
         <node name="_visualizer_noiseFilter___events_0" path="/mainloop/_visualizer_noiseFilter___events_0/">
-            <attr key="_guiSupport" type="string">{"visualizerX":0,"visualizerY":0,"size":12,"minimized":false,"boxX":400.0,"boxY":550.0}</attr>
+            <attr key="_guiSupport" type="string">{"visualizerX":0,"visualizerY":0,"size":12,"minimized":false,"boxX":400.0,"boxY":500.0}</attr>
             <attr key="_priorityAttributes" type="string">compression,ipAddress,portNumber</attr>
             <attr key="compression" type="string">NONE</attr>
             <attr key="ipAddress" type="string">127.0.0.1</attr>
@@ -68,8 +68,8 @@
             <attr key="maxConnectionsBacklog" type="int">5</attr>
             <attr key="maxDataBacklog" type="int">5</attr>
             <attr key="moduleLibrary" type="string">dv_output_net_tcp_server</attr>
-            <attr key="portNumber" type="int">0</attr>
-            <attr key="running" type="bool">false</attr>
+            <attr key="portNumber" type="int">41957</attr>
+            <attr key="running" type="bool">true</attr>
             <attr key="timeout" type="long">0</attr>
             <node name="inputs" path="/mainloop/_visualizer_noiseFilter___events_0/inputs/">
                 <node name="output0" path="/mainloop/_visualizer_noiseFilter___events_0/inputs/output0/">
@@ -78,7 +78,7 @@
             </node>
         </node>
         <node name="accumulator" path="/mainloop/accumulator/">
-            <attr key="_guiSupport" type="string">{"boxX":50.0,"boxY":300.0}</attr>
+            <attr key="_guiSupport" type="string">{"boxX":100.0,"boxY":250.0}</attr>
             <attr key="_priorityAttributes" type="string">accumulationTime</attr>
             <attr key="accumulationNumber" type="int">100000</attr>
             <attr key="accumulationTime" type="int">33</attr>
@@ -109,7 +109,7 @@
             <attr key="devAddress" type="int">0</attr>
             <attr key="logLevel" type="string">WARNING</attr>
             <attr key="moduleLibrary" type="string">dv_davis</attr>
-            <attr key="running" type="bool">false</attr>
+            <attr key="running" type="bool">true</attr>
             <attr key="serialNumber" type="string"/>
             <node name="DAVIS240C" path="/mainloop/capture/DAVIS240C/">
                 <node name="bias" path="/mainloop/capture/DAVIS240C/bias/">
@@ -403,27 +403,8 @@
                 <attr key="_priorityAttributes" type="string"/>
             </node>
         </node>
-        <node name="event_server" path="/mainloop/event_server/">
-            <attr key="_guiSupport" type="string">{"boxX":150.0,"boxY":550.0}</attr>
-            <attr key="_priorityAttributes" type="string">compression,ipAddress,portNumber</attr>
-            <attr key="compression" type="string">NONE</attr>
-            <attr key="ipAddress" type="string">127.0.0.1</attr>
-            <attr key="logLevel" type="string">INFO</attr>
-            <attr key="maxConcurrentConnections" type="int">10</attr>
-            <attr key="maxConnectionsBacklog" type="int">5</attr>
-            <attr key="maxDataBacklog" type="int">5</attr>
-            <attr key="moduleLibrary" type="string">dv_output_net_tcp_server</attr>
-            <attr key="portNumber" type="int">0</attr>
-            <attr key="running" type="bool">true</attr>
-            <attr key="timeout" type="long">0</attr>
-            <node name="inputs" path="/mainloop/event_server/inputs/">
-                <node name="output0" path="/mainloop/event_server/inputs/output0/">
-                    <attr key="from" type="string">noiseFilter[events]</attr>
-                </node>
-            </node>
-        </node>
         <node name="noiseFilter" path="/mainloop/noiseFilter/">
-            <attr key="_guiSupport" type="string">{"boxX":550.0,"boxY":300.0}</attr>
+            <attr key="_guiSupport" type="string">{"boxX":600.0,"boxY":300.0}</attr>
             <attr key="_priorityAttributes" type="string">backgroundActivityEnable</attr>
             <attr key="backgroundActivityCheckPolarity" type="bool">false</attr>
             <attr key="backgroundActivityEnable" type="bool">true</attr>
@@ -444,6 +425,25 @@
             <node name="inputs" path="/mainloop/noiseFilter/inputs/">
                 <node name="events" path="/mainloop/noiseFilter/inputs/events/">
                     <attr key="from" type="string">capture[events]</attr>
+                </node>
+            </node>
+        </node>
+        <node name="output_net_tcp_server" path="/mainloop/output_net_tcp_server/">
+            <attr key="_guiSupport" type="string">{"boxX":100.0,"boxY":500.0}</attr>
+            <attr key="_priorityAttributes" type="string">compression,ipAddress,portNumber</attr>
+            <attr key="compression" type="string">NONE</attr>
+            <attr key="ipAddress" type="string">127.0.0.1</attr>
+            <attr key="logLevel" type="string">INFO</attr>
+            <attr key="maxConcurrentConnections" type="int">10</attr>
+            <attr key="maxConnectionsBacklog" type="int">5</attr>
+            <attr key="maxDataBacklog" type="int">5</attr>
+            <attr key="moduleLibrary" type="string">dv_output_net_tcp_server</attr>
+            <attr key="portNumber" type="int">33859</attr>
+            <attr key="running" type="bool">true</attr>
+            <attr key="timeout" type="long">0</attr>
+            <node name="inputs" path="/mainloop/output_net_tcp_server/inputs/">
+                <node name="output0" path="/mainloop/output_net_tcp_server/inputs/output0/">
+                    <attr key="from" type="string">noiseFilter[events]</attr>
                 </node>
             </node>
         </node>
