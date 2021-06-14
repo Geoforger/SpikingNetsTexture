@@ -14,34 +14,34 @@ trials = 20
 
 # Maximum intensity of events seen across entire dataset
 # Used to scale the heatmaps
-max_intensity = 0
+max_intensity = 75
 max_intensities = []
 
 # Create array to contain the intensities of events for mapping
 intensity = np.zeros([240, 180])
 
-# Open each file and find the highest intensity in order to find an appropriate vmax
-for t in range(trials):
-    for s in range(textures):
-        # Open each file in dataset
-        FILENAME = PATH + "Artificial Dataset " + \
-            str(t) + "Texture No. " + str(s) + ".pickle"
+# # Open each file and find the highest intensity in order to find an appropriate vmax
+# for t in range(trials):
+#     for s in range(textures):
+#         # Open each file in dataset
+#         FILENAME = PATH + "Artificial Dataset " + \
+#             str(t) + "Texture No. " + str(s) + ".pickle"
 
-    with(open(FILENAME, "rb")) as openfile:
-        try:
-            orig_array = pickle.load(openfile)
-        except EOFError:
-            print(EOFError)
+#         with(open(FILENAME, "rb")) as openfile:
+#             try:
+#                 orig_array = pickle.load(openfile)
+#             except EOFError:
+#                 print(EOFError)
 
-    for z in range(len(orig_array)):
-        for y in range(len(orig_array[z])):
-            intensity[z, y] = len(orig_array[z, y])
+#         for z in range(len(orig_array)):
+#             for y in range(len(orig_array[z])):
+#                 intensity[z, y] = len(orig_array[z, y])
 
-    file_intensity = np.max(intensity)
-    max_intensities.append(file_intensity)
+#         file_intensity = np.max(intensity)
+#         max_intensities.append(file_intensity)
 
-    if file_intensity > max_intensity:
-        max_intensity = file_intensity
+#         if file_intensity > max_intensity:
+#             max_intensity = file_intensity
 
 # print(np.unique(max_intensities))
 
@@ -69,8 +69,8 @@ for xx in range(trials):
         plt.ylabel('Y Pixels')
         plt.xlabel('X Pixels')
         plt.colorbar()
-        plt.title("Artificial Dataset" +
-                  str(xx) + " Texture" + str(yy))
+        plt.title("Artificial Dataset Trial " +
+                  str(xx) + " Texture No. " + str(yy) + " Event Intensity")
         plt.savefig("/home/farscope2/Documents/PhD/Spiking Nets Project/SpikingNetsTexture/graphs/" +
                     FOLDER_NAME + "/Artificial Dataset " + str(xx) + " Texture" + str(yy) + ".pickle" + ".png")
         plt.clf()  # Clear figure post save
