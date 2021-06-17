@@ -19,8 +19,8 @@ max_intensities = []
 
 # Image reduction parameters
 x_red = 40  # Total horizontal crop of image
-y_red = 90  # The total vertical crop of the image
 temp_y = 50 # The crop from the top of the image
+y_red = temp_y + 40  # The total vertical crop of the image
 
 # Create array to contain the intensities of events for mapping
 # Create array to contain only the pixels of the neurotac tip
