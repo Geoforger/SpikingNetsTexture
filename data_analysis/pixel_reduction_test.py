@@ -2,11 +2,15 @@ import pickle
 import matplotlib.pyplot as plt
 import numpy as np
 from numpy.lib.arraysetops import unique
+import os
 
 # Path to dataset
-# Change folder path for each dataset?
+# Change folder path for each dataset
 FOLDER_NAME = "ntac_2.5_11texture_20trial_slide_test_06101055/"
 PATH = "/home/farscope2/Documents/PhD/Spiking Nets Project/SpikingNetsTexture/datasets/TacTip_NM/" + FOLDER_NAME
+# Path to save pickle data in
+data_dir = "/home/farscope2/Documents/PhD/Spiking Nets Project/SpikingNetsTexture/datasets/TacTip_NM/Reduced"
+
 
 # Number of textures tested & number of trials per texture
 textures = 11
@@ -27,7 +31,6 @@ y_red = temp_y + 40  # The total vertical crop of the image
 intensity = np.zeros([240-y_red,180-x_red])
 temp_image = np.empty([240 - temp_y,180-x_red], dtype=object)  # Temp image removes missing pixels at top
 reduced_image = np.empty([240-y_red,180-x_red], dtype=object)
-
 
 
 # Create and save heatmap for each tap
@@ -57,6 +60,13 @@ for xx in range(trials):
         for u in range(len(reduced_image)):
                 for i in range(len(reduced_image[u])):
                     intensity[u, i] = len(reduced_image[u, i])
+
+
+        # Save dataset seperately for ease of use with network
+        pickle_out = open(os.path.join(data_dir, 'Artificial Dataset ' +
+                                               str(xx) + 'Texture No. ' + str(yy) + '.pickle'), 'wb')
+        pickle.dump(reduced_image, pickle_out)
+        pickle_out.close()
 
         # Plot heatmap of events
         plt.imshow(intensity, cmap='Reds', interpolation='nearest',
