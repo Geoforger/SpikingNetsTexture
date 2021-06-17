@@ -64,7 +64,7 @@ for xx in range(trials):
                 intensity[u, i] = len(orig_array[u, i])
 
         # Plot heatmap of events
-        plt.imshow(intensity, cmap='hot', interpolation='nearest',
+        plt.imshow(intensity, cmap='Reds', interpolation='nearest',
                    vmin=0, vmax=max_intensity)
         plt.ylabel('Y Pixels')
         plt.xlabel('X Pixels')
