@@ -12,7 +12,7 @@
             <attr key="maxDataBacklog" type="int">5</attr>
             <attr key="moduleLibrary" type="string">dv_output_net_tcp_server</attr>
             <attr key="portNumber" type="int">45963</attr>
-            <attr key="running" type="bool">false</attr>
+            <attr key="running" type="bool">true</attr>
             <attr key="timeout" type="long">0</attr>
             <node name="inputs" path="/mainloop/_visualizer_accumulator___frames_0/inputs/">
                 <node name="output0" path="/mainloop/_visualizer_accumulator___frames_0/inputs/output0/">
@@ -31,7 +31,7 @@
             <attr key="maxDataBacklog" type="int">5</attr>
             <attr key="moduleLibrary" type="string">dv_output_net_tcp_server</attr>
             <attr key="portNumber" type="int">33257</attr>
-            <attr key="running" type="bool">false</attr>
+            <attr key="running" type="bool">true</attr>
             <attr key="timeout" type="long">0</attr>
             <node name="inputs" path="/mainloop/_visualizer_capture___frames_0/inputs/">
                 <node name="output0" path="/mainloop/_visualizer_capture___frames_0/inputs/output0/">
@@ -40,7 +40,7 @@
             </node>
         </node>
         <node name="_visualizer_capture___frames_796a04e6150e43fc86e367d132f5af6a" path="/mainloop/_visualizer_capture___frames_796a04e6150e43fc86e367d132f5af6a/">
-            <attr key="_guiSupport" type="string">{"visualizerX":0,"visualizerY":0,"size":2,"minimized":false,"boxX":400.0,"boxY":500.0}</attr>
+            <attr key="_guiSupport" type="string">{"visualizerX":0,"visualizerY":0,"size":2,"minimized":true,"boxX":400.0,"boxY":500.0}</attr>
             <attr key="_priorityAttributes" type="string">compression,ipAddress,portNumber</attr>
             <attr key="compression" type="string">NONE</attr>
             <attr key="ipAddress" type="string">127.0.0.1</attr>
@@ -50,7 +50,7 @@
             <attr key="maxDataBacklog" type="int">5</attr>
             <attr key="moduleLibrary" type="string">dv_output_net_tcp_server</attr>
             <attr key="portNumber" type="int">0</attr>
-            <attr key="running" type="bool">true</attr>
+            <attr key="running" type="bool">false</attr>
             <attr key="timeout" type="long">0</attr>
             <node name="inputs" path="/mainloop/_visualizer_capture___frames_796a04e6150e43fc86e367d132f5af6a/inputs/">
                 <node name="output0" path="/mainloop/_visualizer_capture___frames_796a04e6150e43fc86e367d132f5af6a/inputs/output0/">
@@ -59,7 +59,7 @@
             </node>
         </node>
         <node name="_visualizer_capture___imu_0" path="/mainloop/_visualizer_capture___imu_0/">
-            <attr key="_guiSupport" type="string">{"visualizerX":12,"visualizerY":8,"size":4,"minimized":true,"boxX":400.0,"boxY":500.0}</attr>
+            <attr key="_guiSupport" type="string">{"visualizerX":0,"visualizerY":0,"size":7,"minimized":true,"boxX":400.0,"boxY":500.0}</attr>
             <attr key="_priorityAttributes" type="string">compression,ipAddress,portNumber</attr>
             <attr key="compression" type="string">NONE</attr>
             <attr key="ipAddress" type="string">127.0.0.1</attr>
@@ -88,7 +88,7 @@
             <attr key="maxDataBacklog" type="int">5</attr>
             <attr key="moduleLibrary" type="string">dv_output_net_tcp_server</attr>
             <attr key="portNumber" type="int">41957</attr>
-            <attr key="running" type="bool">false</attr>
+            <attr key="running" type="bool">true</attr>
             <attr key="timeout" type="long">0</attr>
             <node name="inputs" path="/mainloop/_visualizer_noiseFilter___events_0/inputs/">
                 <node name="output0" path="/mainloop/_visualizer_noiseFilter___events_0/inputs/output0/">
@@ -128,7 +128,7 @@
             <attr key="devAddress" type="int">0</attr>
             <attr key="logLevel" type="string">WARNING</attr>
             <attr key="moduleLibrary" type="string">dv_davis</attr>
-            <attr key="running" type="bool">false</attr>
+            <attr key="running" type="bool">true</attr>
             <attr key="serialNumber" type="string"/>
             <node name="DAVIS240C" path="/mainloop/capture/DAVIS240C/">
                 <node name="bias" path="/mainloop/capture/DAVIS240C/bias/">
