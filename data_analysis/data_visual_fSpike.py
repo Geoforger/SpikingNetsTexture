@@ -5,12 +5,12 @@ from numpy.lib.arraysetops import unique
 
 # Path to dataset
 # Change folder path for each dataset?
-FOLDER_NAME = "ntac_2.5_11texture_20trial_slide_test_06101055/"
+FOLDER_NAME = "ntac_2.5_11texture_100trial_slide_test_06101340/"
 PATH = "/home/farscope2/Documents/PhD/Spiking Nets Project/SpikingNetsTexture/datasets/TacTip_NM/" + FOLDER_NAME
 
 # Number of textures tested & number of trials per texture
 textures = 11
-trials = 20
+trials = 100
 
 # Maximum intensity of events seen across entire dataset
 # Used to scale the heatmaps
@@ -74,6 +74,6 @@ for xx in range(trials):
         plt.colorbar()
         plt.title("Artificial Dataset " + str(xx) + " Texture " +
                   str(yy) + " Initial Spike Timings")
-        plt.savefig("/home/farscope2/Documents/PhD/Spiking Nets Project/SpikingNetsTexture/first_spike_graphs/" +
+        plt.savefig("/home/farscope2/Documents/PhD/Spiking Nets Project/SpikingNetsTexture/graphs/first_spike_graphs/" +
                     FOLDER_NAME + "Artificial Dataset " + str(xx) + "Texture " + str(yy) + ".pickle" + ".png")
         plt.clf()  # Clear figure post save

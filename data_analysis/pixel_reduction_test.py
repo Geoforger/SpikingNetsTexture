@@ -6,7 +6,7 @@ import os
 
 # Path to dataset
 # Change folder path for each dataset
-FOLDER_NAME = "ntac_2.5_11texture_20trial_slide_test_06101055/"
+FOLDER_NAME = "ntac_2.5_11texture_100trial_slide_test_06101340/"
 PATH = "/home/farscope2/Documents/PhD/Spiking Nets Project/SpikingNetsTexture/datasets/TacTip_NM/" + FOLDER_NAME
 # Path to save pickle data in
 data_dir = "/home/farscope2/Documents/PhD/Spiking Nets Project/SpikingNetsTexture/datasets/TacTip_NM/Reduced"
@@ -14,7 +14,7 @@ data_dir = "/home/farscope2/Documents/PhD/Spiking Nets Project/SpikingNetsTextur
 
 # Number of textures tested & number of trials per texture
 textures = 11
-trials = 20
+trials = 100
 
 # Maximum intensity of events seen across entire dataset
 # Used to scale the heatmaps

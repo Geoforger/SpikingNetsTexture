@@ -78,7 +78,6 @@ for kk in range(1, 11):
             plt.xlabel("time (ms)")
             plt.title(FILE_NAME)
             plt.setp(plt.gca().get_xticklabels(), visible=True)
-            plt.set_autoscale_on(False)
             #print(spiketrain)
 
     plot_spiketrains(data.segments[0])
