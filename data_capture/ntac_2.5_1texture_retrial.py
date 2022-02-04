@@ -3,9 +3,9 @@ import json
 import time
 import threading
 import os
-from core.sensor.tactile_sensor_neuro_pixels import TacTip_neuro
 from cri.controller import ABBController
 from cri.robot import SyncRobot, AsyncRobot
+from core.sensor.tactile_sensor_neuro_pixels import TacTip_neuro
 import pickle
 import pandas as pd
 import numpy as np

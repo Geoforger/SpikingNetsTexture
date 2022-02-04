@@ -7,6 +7,7 @@ import numpy
 import matplotlib.pyplot as plt
 import time
 
+
 for kk in range(1, 11):
     # Reset NEST kernal
     nest.ResetKernel()  # Reset kernal to prevent errors
@@ -17,7 +18,6 @@ for kk in range(1, 11):
     # Path to file containing spike timings
     FILE_NAME = "Artificial Dataset 0Texture No. " + str(kk) + ".pickle"
     DATA_PATH = "/home/farscope2/Documents/PhD/Spiking Nets Project/SpikingNetsTexture/datasets/TacTip_NM/Reduced/" + FILE_NAME
-
 
     # Define network
     N = 19600   # Number of input neurons

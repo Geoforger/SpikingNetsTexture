@@ -34,7 +34,7 @@ def make_meta(meta_file,
               poses_rng=[[-5, 0, -3, -15, -15, -45], [5, 0, 0, 15, 15, 45]],
               obj_poses=[[0, y, 0, 0, 0, 0] for y in range(0, 450, 50)],
               num_poses=11,
-              num_trials=20,
+              num_trials=1,
               ):
 
     # Set differing heights for misprinted textures
